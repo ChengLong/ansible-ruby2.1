@@ -1,0 +1,17 @@
+---
+- name: Install python-software-properties
+  apt: name=python-software-properties 
+
+- name: Add ppa:brightbox to repo
+  apt_repository: repo='ppa:brightbox/ruby-ng'
+
+- name: Update cache
+  apt: update_cache=yes
+
+- name: Install Ruby 2.1
+  apt: name={{ item }} state=latest
+  with_items: 
+    - build-essential
+    - ruby2.1
+    - ruby2.1-dev
+    - libsqlite3-dev
