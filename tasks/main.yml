@@ -1,6 +1,6 @@
 ---
 - name: Install python-software-properties
-  apt: name=python-software-properties 
+  apt: name=python-software-properties name=present 
 
 - name: Add ppa:brightbox to repo
   apt_repository: repo='ppa:brightbox/ruby-ng'
