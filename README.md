@@ -1,4 +1,4 @@
-ruby2.1
+ruby2_1
 =========
 
 Install Ruby 2.1 on Debian based distro, i.e. Ubuntu 
@@ -24,7 +24,7 @@ Example Playbook
 ```
 - hosts: servers
   roles:
-     - role: ChengLong.ruby2.1 
+     - role: ChengLong.ruby2_1 
 ```
 
 License
